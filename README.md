@@ -20,12 +20,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS grid
 - Mobile-first workflow
 - JavaScript
 
 ## Live site solution
 
-[Live site]() hosted GitHub Pages.
+[Live site](https://amansgz.github.io/css-coding-bootcamp-testimonials-slider/) hosted on GitHub Pages.
 
 ## Author
 
