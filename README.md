@@ -1,11 +1,5 @@
-# 👩‍💻 Frontend Mentor - Coding bootcamp testimonials slider
+# 👩‍💻 Coding bootcamp testimonials slider
 
-Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-Join to [Frontend Mentor Discord community](https://discord.gg/UAfh3qzhYb)
- 
-This is a solution for [Coding Bootcamp Testimonials](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL) challenge.
-
-![Design preview for the Coding bootcamp testimonials slider challenge](./images/preview.png)
 
 ## The challenge
 
@@ -24,10 +18,18 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-## Live site solution
+<div>
+  <h3>
+    <a href= "https://amansgz.github.io/css-coding-bootcamp-testimonials-slider/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-[Live site](https://amansgz.github.io/css-coding-bootcamp-testimonials-slider/) hosted on GitHub Pages.
+![Design preview for the Coding bootcamp testimonials slider challenge](./images/preview.png)
 
-## Author
-
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
