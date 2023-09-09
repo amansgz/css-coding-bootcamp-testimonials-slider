@@ -3,11 +3,14 @@
 
 ## The challenge
 
-Users should be able to:
+The challenge is to build out this landing page and get it looking as close to the design as possible.
 
-- View the optimal layout for the site depending on their device's screen size
+
+Your users should be able to:
+
 - Navigate the slider using either their mouse/trackpad or keyboard
-
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
 ## Built with
 
