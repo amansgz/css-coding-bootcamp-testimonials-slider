@@ -7,18 +7,18 @@
   --section-block--padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.8681)), 5rem);
   --section-inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 5.7361)), 8rem);
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 body {
   max-width: 1440px;
+  min-height: 100%;
   margin: auto;
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
@@ -34,6 +34,11 @@ section {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
+}
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
 }
 .slider {
   display: grid;
@@ -145,7 +150,7 @@ section {
   .slider__buttons {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    transform: translate(-100%, -280%);
+    transform: translate(-100%, -200%);
   } 
   .slider__content {
     grid-column: 1 / 2;
@@ -157,14 +162,14 @@ section {
     align-self: center;
     justify-self: flex-start;
   }
+  .student__testimonial {
+    width: 32ch;
+    padding-top: 5rem;
+  }
   .wrapper {
     align-self: flex-start;
     display: flex;
     align-items: center;
-  }
-  .student__testimonial {
-    width: 32ch;
-    padding-top: 5rem;
   }
   .student__name {
     margin-right: 1rem;
@@ -175,26 +180,39 @@ section {
     display: inline;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .slider {
     grid-template-columns: 50% 50%;
     place-items: center;
   }
   .slider__image {
+    height: 650px;
     background-size: 120%;
     background-position: right center;
-    height: 650px;
   }
   .slider__image img {
-    margin-top: 5rem;
     width: 90%;
-    transform: translateX(-10%);
+    margin-top: 5rem;
   }
-  .slider__content {
-    transform: translateX(15%);
+  .slider__buttons {
+    transform: translate(-100%, -500%);
   }
   .student__testimonial {
     width: 34ch;
     font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 0.5736)), 3rem);
-  }  
+  }
+  .wrapper {
+    margin-top: 3rem;
+  }
 }  
+@media screen and (min-width: 1280px) {
+  .slider__image img {
+    transform: translateX(-10%);
+  }
+  .slider__buttons {
+    transform: translate(-180%, -280%);
+  }
+  .slider__content {
+    transform: translateX(7%);
+  }  
+}
