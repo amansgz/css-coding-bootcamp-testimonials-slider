@@ -2,6 +2,7 @@
   --dark-text: hsl(240, 38%, 20%);
   --light-text: hsl(240, 18%, 77%);
   --light-blue: hsl(244, 68%, 55%);
+  --bg-footer: hsl(240, 57%, 97%);
 
   --section-block--padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.8681)), 5rem);
   --section-inline-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 5.7361)), 8rem);
@@ -11,18 +12,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 html {
-  
   font-size: 62.5%;
 }
 body {
   max-width: 1440px;
   margin: auto;
-  
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
-  
 }
 picture,
 figure,
@@ -90,9 +89,9 @@ section {
 }
 
 .student__testimonial {
-  width: 30ch;
+  width: 29ch;
   margin-bottom: 2rem;
-  font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.1912)), 1.8rem);
+  font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.7648)), 2.4rem);
   font-weight: 300;
   color: var(--dark-text);
   line-height: 1.4;
@@ -117,6 +116,7 @@ section {
   padding: 3rem 0;
   text-align: center;
   color: var(--dark-text);
+  background-color: var(--bg-footer);
 }
 .footer__attribution a {
   text-decoration: none;
@@ -133,17 +133,19 @@ section {
 /**********************************/
 @media screen and (min-width: 768px) {
   .slider {
-    grid-template-columns: 35% 55%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 1fr 50px;
+    place-items: end;
   }
   .slider__image {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
+  
   .slider__buttons {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    transform: translate(-100%, -210%);
+    transform: translate(-100%, -280%);
   } 
   .slider__content {
     grid-column: 1 / 2;
@@ -152,13 +154,47 @@ section {
     background-position: 8vh -1vw;
     background-color: transparent;
     text-align: left;
+    align-self: center;
+    justify-self: flex-start;
   }
   .wrapper {
     align-self: flex-start;
     display: flex;
+    align-items: center;
+  }
+  .student__testimonial {
+    width: 32ch;
+    padding-top: 5rem;
+  }
+  .student__name {
+    margin-right: 1rem;
+    margin-bottom: 0;
   }
   .student__name,
   .student__title {
     display: inline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .slider {
+    grid-template-columns: 50% 50%;
+    place-items: center;
+  }
+  .slider__image {
+    background-size: 120%;
+    background-position: right center;
+    height: 650px;
+  }
+  .slider__image img {
+    margin-top: 5rem;
+    width: 90%;
+    transform: translateX(-10%);
+  }
+  .slider__content {
+    transform: translateX(15%);
+  }
+  .student__testimonial {
+    width: 34ch;
+    font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 0.5736)), 3rem);
+  }  
+}  
